@@ -1,1 +1,1 @@
-# TekSys_Java_Exersises
+# TekSys_Java_Exercises
