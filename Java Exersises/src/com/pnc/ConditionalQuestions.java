@@ -79,26 +79,46 @@ public class ConditionalQuestions {
 //		}
 
 		// 43 -BMI calculator
-		
-		System.out.println("Enter weight (kg): ");
-		double weight = sc.nextDouble();
-		System.out.println("Enter height (m): ");
-		double height = sc.nextDouble();
-		double bmi = weight/(Math.pow(height, 2));
-		
-		if(bmi >= 30) {
-			System.out.println(bmi + " :Obese");
-		}else if (bmi < 30 && bmi >= 25){
-			System.out.println(bmi + " :Overweight");
-		}else if (bmi >= 18.5 && bmi < 25.0) {
-			System.out.println(bmi + " :Noraml");		
-		}else {
-			System.out.println(bmi + " :Underweight");
-		}
+//		
+//		System.out.println("Enter weight (kg): ");
+//		double weight = sc.nextDouble();
+//		System.out.println("Enter height (m): ");
+//		double height = sc.nextDouble();
+//		double bmi = weight/(Math.pow(height, 2));
+//		
+//		if(bmi >= 30) {
+//			System.out.println(bmi + " :Obese");
+//		}else if (bmi < 30 && bmi >= 25){
+//			System.out.println(bmi + " :Overweight");
+//		}else if (bmi >= 18.5 && bmi < 25.0) {
+//			System.out.println(bmi + " :Noraml");		
+//		}else {
+//			System.out.println(bmi + " :Underweight");
+//		}
 
 		// 47 -Computing Taxes
 
 		// 61 -Chinese Zodiac
+
+		System.out.println("Enter year: ");
+		int year = sc.nextInt();
+
+		int zodiac = year % 12;
+		switch (zodiac) {
+		case 0: System.out.println("Year of the Monkey"); break;
+		case 1: System.out.println("Year of the Rooster"); break;
+		case 2: System.out.println("Year of the Dog"); break;
+		case 3: System.out.println("Year of the Pig"); break;
+		case 4: System.out.println("Year of the Rat"); break;
+		case 5: System.out.println("Year of the Ox"); break;
+		case 6: System.out.println("Year of the Tiger"); break;
+		case 7: System.out.println("Year of the Rabbit"); break;
+		case 8: System.out.println("Year of the Dragon"); break;
+		case 9: System.out.println("Year of the Snake"); break;
+		case 10: System.out.println("Year of the Horse"); break;
+		case 11: System.out.println("Year of the Sheep"); break;
+		}
+
 	}
 
 }
