@@ -71,12 +71,17 @@ public class ExerciseOperatorsAndNumbers {
 		System.out.println(Integer.toBinaryString(y3));
 		
 		//5
+		int h = 7;
+		int i = 17;
+		int j = h & i; //1
+		System.out.println(j);
+		//6
 		int a = 40;
 		System.out.println(a);
 		a++;
 		System.out.println(a);
 		
-		//6
+		//7
 		int b = 0;
 		System.out.println(b);
 		b =+ 1;
@@ -86,7 +91,7 @@ public class ExerciseOperatorsAndNumbers {
 		b = b + 1;
 		System.out.println(b);
 		
-		//7
+		//8
 		
 		int c = 5;
 		int d = 8;
