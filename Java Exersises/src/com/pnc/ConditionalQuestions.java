@@ -42,7 +42,6 @@ public class ConditionalQuestions {
 		int firstDigitUser = 0;
 		int secondDigitUser = 0;
 		int secondDigitlotto = 0;
-		System.out.println(lottoNum);
 		String lottoNumString = Integer.toString(lottoNum);
 		 int firstDigitlotto = Character.digit(lottoNumString.charAt(0), 10);
 		try {
@@ -55,7 +54,6 @@ public class ConditionalQuestions {
 
 		int userNum = sc.nextInt();
 		final int userNum1 = userNum;
-		System.out.println(userNum);
 		String userNumString = Integer.toString(userNum);
 		firstDigitUser = Character.digit(userNumString.charAt(0), 10);
 		try { 
@@ -69,9 +67,6 @@ public class ConditionalQuestions {
 			revUserNum = revUserNum * 10 + digit;
 			userNum /= 10;
 		}
-		
-		System.out.println(userNum);
-		System.out.println(userNumString);
 		 
 		if (lottoNum == userNum1) {
 			System.out.println("You Win $5000!");
