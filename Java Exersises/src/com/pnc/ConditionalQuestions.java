@@ -35,50 +35,66 @@ public class ConditionalQuestions {
 //		}
 
 		// 23 - Conditional Statements
-
-		Random rand = new Random();
-		int lottoNum = rand.nextInt(99);
-		int revUserNum = 0;
-		int firstDigitUser = 0;
-		int secondDigitUser = 0;
-		int secondDigitlotto = 0;
-		String lottoNumString = Integer.toString(lottoNum);
-		 int firstDigitlotto = Character.digit(lottoNumString.charAt(0), 10);
-		try {
-		 secondDigitlotto  = Character.digit(lottoNumString.charAt(1), 10);
-		 } catch (Exception e) {
-			 
-		 }
-	 
-		System.out.println("enter number: ");
-
-		int userNum = sc.nextInt();
-		final int userNum1 = userNum;
-		String userNumString = Integer.toString(userNum);
-		firstDigitUser = Character.digit(userNumString.charAt(0), 10);
-		try { 
-		 secondDigitUser  = Character.digit(userNumString.charAt(1), 10);
-		 } catch (Exception e) {
-			 
-		 }
-		 
-		while (userNum != 0) {
-			int digit = userNum % 10;
-			revUserNum = revUserNum * 10 + digit;
-			userNum /= 10;
-		}
-		 
-		if (lottoNum == userNum1) {
-			System.out.println("You Win $5000!");
-		} else if (revUserNum == lottoNum) {
-			System.out.println("You Win $1000!");
-		} else if (firstDigitlotto == firstDigitUser || secondDigitlotto == firstDigitUser || secondDigitUser == secondDigitlotto ) {
-			System.out.println("You win $250!");}
-		else {
-			System.out.println("No Winnings");
-		}
+//
+//		Random rand = new Random();
+//		int lottoNum = rand.nextInt(99);
+//		int revUserNum = 0;
+//		int firstDigitUser = 0;
+//		int secondDigitUser = 0;
+//		int secondDigitlotto = 0;
+//		String lottoNumString = Integer.toString(lottoNum);
+//		 int firstDigitlotto = Character.digit(lottoNumString.charAt(0), 10);
+//		try {
+//		 secondDigitlotto  = Character.digit(lottoNumString.charAt(1), 10);
+//		 } catch (Exception e) {
+//			 
+//		 }
+//	 
+//		System.out.println("enter number: ");
+//
+//		int userNum = sc.nextInt();
+//		final int userNum1 = userNum;
+//		String userNumString = Integer.toString(userNum);
+//		firstDigitUser = Character.digit(userNumString.charAt(0), 10);
+//		try { 
+//		 secondDigitUser  = Character.digit(userNumString.charAt(1), 10);
+//		 } catch (Exception e) {
+//			 
+//		 }
+//		 
+//		while (userNum != 0) {
+//			int digit = userNum % 10;
+//			revUserNum = revUserNum * 10 + digit;
+//			userNum /= 10;
+//		}
+//		 
+//		if (lottoNum == userNum1) {
+//			System.out.println("You Win $5000!");
+//		} else if (revUserNum == lottoNum) {
+//			System.out.println("You Win $1000!");
+//		} else if (firstDigitlotto == firstDigitUser || secondDigitlotto == firstDigitUser || secondDigitUser == secondDigitlotto ) {
+//			System.out.println("You win $250!");}
+//		else {
+//			System.out.println("No Winnings");
+//		}
 
 		// 43 -BMI calculator
+		
+		System.out.println("Enter weight (kg): ");
+		double weight = sc.nextDouble();
+		System.out.println("Enter height (m): ");
+		double height = sc.nextDouble();
+		double bmi = weight/(Math.pow(height, 2));
+		
+		if(bmi >= 30) {
+			System.out.println(bmi + " :Obese");
+		}else if (bmi < 30 && bmi >= 25){
+			System.out.println(bmi + " :Overweight");
+		}else if (bmi >= 18.5 && bmi < 25.0) {
+			System.out.println(bmi + " :Noraml");		
+		}else {
+			System.out.println(bmi + " :Underweight");
+		}
 
 		// 47 -Computing Taxes
 
