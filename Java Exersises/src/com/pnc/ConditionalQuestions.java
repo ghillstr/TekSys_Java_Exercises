@@ -1,0 +1,93 @@
+package com.pnc;
+
+import java.util.*;
+import java.io.*;
+
+public class ConditionalQuestions {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		// 12- Conditional Statements
+
+//		System.out.println("enter number: ");
+//		int num = sc.nextInt();
+//		if (num % 2 == 0 && num % 3 == 0) {
+//			System.out.println(num + " is divisible by 2 and 3");
+//		}
+//		System.out.println("enter number: ");
+//		int num2 = sc.nextInt();
+//		if (num2 % 2 == 0 || num2 % 3 == 0) {
+//			System.out.println(num2 + " is divisible by 2 or 3");
+//		}
+//		System.out.println("enter number: ");
+//		int num3 = sc.nextInt();
+//		if (num3 % 2 == 0 ^ num2 % 3 == 0) {
+//			System.out.println(num3 + " is divisible by 2 or 3, but not both");
+//		}
+		// 15- Conditional Statements
+//		System.out.println("enter year: ");
+//		int year = sc.nextInt();
+//		if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+//			System.out.println("This is a Leap Year!");
+//		} else {
+//			System.out.println("This is not a Leap Year!");
+//		}
+
+		// 23 - Conditional Statements
+
+		Random rand = new Random();
+		int lottoNum = rand.nextInt(99);
+		int revUserNum = 0;
+		int firstDigitUser = 0;
+		int secondDigitUser = 0;
+		int secondDigitlotto = 0;
+		System.out.println(lottoNum);
+		String lottoNumString = Integer.toString(lottoNum);
+		 int firstDigitlotto = Character.digit(lottoNumString.charAt(0), 10);
+		try {
+		 secondDigitlotto  = Character.digit(lottoNumString.charAt(1), 10);
+		 } catch (Exception e) {
+			 
+		 }
+	 
+		System.out.println("enter number: ");
+
+		int userNum = sc.nextInt();
+		final int userNum1 = userNum;
+		System.out.println(userNum);
+		String userNumString = Integer.toString(userNum);
+		firstDigitUser = Character.digit(userNumString.charAt(0), 10);
+		try { 
+		 secondDigitUser  = Character.digit(userNumString.charAt(1), 10);
+		 } catch (Exception e) {
+			 
+		 }
+		 
+		while (userNum != 0) {
+			int digit = userNum % 10;
+			revUserNum = revUserNum * 10 + digit;
+			userNum /= 10;
+		}
+		
+		System.out.println(userNum);
+		System.out.println(userNumString);
+		 
+		if (lottoNum == userNum1) {
+			System.out.println("You Win $5000!");
+		} else if (revUserNum == lottoNum) {
+			System.out.println("You Win $1000!");
+		} else if (firstDigitlotto == firstDigitUser || secondDigitlotto == firstDigitUser || secondDigitUser == secondDigitlotto ) {
+			System.out.println("You win $250!");}
+		else {
+			System.out.println("No Winnings");
+		}
+
+		// 43 -BMI calculator
+
+		// 47 -Computing Taxes
+
+		// 61 -Chinese Zodiac
+	}
+
+}

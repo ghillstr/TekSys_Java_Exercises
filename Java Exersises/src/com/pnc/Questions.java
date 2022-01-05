@@ -50,6 +50,8 @@ public class Questions {
 		loanAmount = sc.nextDouble();
 		monthlyPayment = (loanAmount * interestRate) / (1 - (1 / ((1 + interestRate) * years)));
 		System.out.println(monthlyPayment);
+
+		
 		
 		sc.close();
 
