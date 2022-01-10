@@ -6,10 +6,10 @@ public class QuesitonsLoops {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		// slide22(sc);
+		slide22(sc);
 		slide23(sc);
-		// multiTableSlide50();
-		// slide52();
+		 multiTableSlide50();
+		 slide52();
 
 		sc.close();
 

@@ -4,16 +4,15 @@ import java.util.Scanner;
 
 public class LoopExercies {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		 question1();
-		 question2();
-		 question3();
-		 question4();
-		 question5();
-		 question6();
-		 question7();
-		 question8();
-		 question9();
+		question1();
+		question2();
+		question3();
+		question4();
+		question5();
+		question6();
+		question7();
+		question8();
+		question9();
 	}
 
 	public static void question1() {
