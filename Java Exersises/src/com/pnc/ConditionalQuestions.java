@@ -178,7 +178,7 @@ public class ConditionalQuestions {
 
 	}
 
-	private static double MarriedJointlyFilter(double income) {
+	private static double marriedJointlyFilter(double income) {
 		if (income < 16700) {
 			return income * 0.1;
 		} else if (income < 67900) {
@@ -244,7 +244,7 @@ public class ConditionalQuestions {
 			System.out.println(singleFilter(income));
 			break;
 		case 2:
-			System.out.println(MarriedJointlyFilter(income));
+			System.out.println(marriedJointlyFilter(income));
 			break;
 		case 3:
 			System.out.println(marriedSeparateFilter(income));
