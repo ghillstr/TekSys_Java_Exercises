@@ -78,19 +78,21 @@ public class LoopExercies {
 	}
 
 	public static void question7() {
-		int r = 0;
 		int sum = 0;
-		int i = 0;
+		int num = 0;
 
-		for (i = 10; i <= 200; i++) {
+		for (int i = 10; i <= 200; i++) {
+			num = i;
+			sum = 0;
+			while (num != 0) {
+				int r = num % 10;
+				num = num / 10;
+				sum = sum * 10 + r;
+			}
 
-			r = i % 10;
-			i = i / 10;
-			sum = (sum * 10) + r;
+			if (i == sum)
+				System.out.print(i + " ");
 
-		}
-		if (i == sum) {
-			System.out.println(i + " ");
 		}
 
 	}
