@@ -6,7 +6,6 @@ public class Test {
 
 		char[] message = { 'c', 'a', 'k', 'e', ' ', 'p', 'o', 'u', 'n', 'd', ' ', 's', 't', 'e', 'a', 'l' };
 		reverseWords(message);
-		
 
 	}
 
@@ -15,12 +14,11 @@ public class Test {
 		String newMessage = " ";
 		String[] arrOfStr = strMessage.split(" "); // split the message into string array
 
-		for (int i = arrOfStr.length - 1; i >= 0; i--) { // reverse message 
+		for (int i = arrOfStr.length - 1; i >= 0; i--) { // reverse message
 			newMessage = arrOfStr[i] + " ";
 			System.out.print(newMessage);
-			
+
 		}
-		
 
 	}
 
