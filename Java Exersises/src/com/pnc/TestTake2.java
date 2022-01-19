@@ -6,7 +6,7 @@ public class TestTake2 {
 
 		char[] message = { 'c', 'a', 'k', 'e', ' ', 'p', 'o', 'u', 'n', 'd', ' ', 's', 't', 'e', 'a', 'l' };
 
-		//reverseWords(message);
+		reverseWords(message);
 		System.out.println(reverseWords(message));
 
 	}
