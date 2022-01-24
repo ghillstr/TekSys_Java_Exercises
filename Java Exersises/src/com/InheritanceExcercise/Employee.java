@@ -33,7 +33,7 @@ public class Employee {
 	}
 	public double totalSalary() {
 		double total =  calculateSalary() +  calculateTransportAllowance(); 
-		System.out.println(total);
+		System.out.println("$" + total);
 		return total;
 	}
 
