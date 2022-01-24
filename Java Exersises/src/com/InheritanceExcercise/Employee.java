@@ -22,16 +22,20 @@ public class Employee {
 	}
 	
 	public double calculateSalary() {
-		double salary = basicSalary + (basicSalary * specialAllowance / 100) + (basicSalary * hra / 100);
-		System.out.println(salary);
+		double salary = basicSalary + (getBasicSalary() * specialAllowance / 100) + (getBasicSalary() * hra / 100);
+		//System.out.println(salary);
 		return salary;
 	}
 	public double calculateTransportAllowance() {
-		double transportAllowance = 10 * basicSalary/ 100;
-		System.out.println(transportAllowance);
+		double transportAllowance = 10 * getBasicSalary()/ 100;
+		//System.out.println(transportAllowance);
 		return transportAllowance;
 	}
-	
+	public double totalSalary() {
+		double total =  calculateSalary() +  calculateTransportAllowance(); 
+		System.out.println(total);
+		return total;
+	}
 
 	public long getEmployeeId() {
 		return employeeId;

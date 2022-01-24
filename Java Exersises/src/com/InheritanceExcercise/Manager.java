@@ -11,7 +11,7 @@ public class Manager extends Employee {
 	@Override
 	public double calculateTransportAllowance() {
 		double transportAllowance = 15 * basicSalary / 100;
-		System.out.println(transportAllowance);
+		//System.out.println(transportAllowance);
 		return transportAllowance;
 	}
 

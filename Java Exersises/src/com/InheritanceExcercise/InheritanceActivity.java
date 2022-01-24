@@ -6,10 +6,13 @@ public class InheritanceActivity {
 		Trainee jack = new Trainee(29846, "Jack", "Mumbai India", 442085, 45000);
 		
 		System.out.println("Salary:");
-		peter.calculateSalary();
-		jack.calculateSalary();
+		System.out.println(peter.calculateSalary());
+		System.out.println(jack.calculateSalary());
 		System.out.println("\nTransport Allowance:");
-		peter.calculateTransportAllowance();
-		jack.calculateTransportAllowance();
+		System.out.println(peter.calculateTransportAllowance());
+		System.out.println(jack.calculateTransportAllowance());
+		System.out.println("\nTotal Salary:");
+		peter.totalSalary();
+		jack.totalSalary();
 	}
 }
