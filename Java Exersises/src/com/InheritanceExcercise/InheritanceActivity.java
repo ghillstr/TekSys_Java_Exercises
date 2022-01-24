@@ -13,7 +13,7 @@ public class InheritanceActivity {
 		System.out.println("\nTransport Allowance:");
 		System.out.println("Test Case 1: " ); 
 		System.out.println("$" + peter.calculateTransportAllowance());
-		System.out.println("Test Case 2: $" );
+		System.out.println("Test Case 2: " );
 		System.out.println("$" + jack.calculateTransportAllowance());
 		System.out.println("\nTotal Salary:");
 		System.out.println("Test Case 1: " ); 
