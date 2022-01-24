@@ -22,12 +22,12 @@ public class Employee {
 	}
 	
 	public double calculateSalary() {
-		double salary = basicSalary + (getBasicSalary() * specialAllowance / 100) + (getBasicSalary() * hra / 100);
+		double salary = getBasicSalary() + (getBasicSalary() * specialAllowance / 100) + (getBasicSalary() * hra / 100);
 		//System.out.println(salary);
 		return salary;
 	}
 	public double calculateTransportAllowance() {
-		double transportAllowance = 10 * getBasicSalary()/ 100;
+		double transportAllowance = 10.0 * getBasicSalary()/ 100;
 		//System.out.println(transportAllowance);
 		return transportAllowance;
 	}

@@ -4,7 +4,7 @@ public class Manager extends Employee {
 
 	public Manager(long employeeId, String employeeName, String employeeAddress, long employeePhone, double salary) {
 		super(employeeId, employeeName, employeeAddress, employeePhone);
-		setBasicSalary(salary);
+		super.setBasicSalary(salary);
 
 	}
 
