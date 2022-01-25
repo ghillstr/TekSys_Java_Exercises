@@ -1,4 +1,4 @@
-package com.InterfaceExercies;
+package com.InterfaceExercise;
 
 interface LibraryUser {
 	public void registerAccount();

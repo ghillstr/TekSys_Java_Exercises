@@ -1,4 +1,4 @@
-package com.InterfaceExercies;
+package com.InterfaceExercise;
 
 public class AdultUsers {
 	int age;
