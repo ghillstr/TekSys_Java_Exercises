@@ -4,14 +4,14 @@ public class Manager extends Employee {
 
 	public Manager(long employeeId, String employeeName, String employeeAddress, long employeePhone, double salary) {
 		super(employeeId, employeeName, employeeAddress, employeePhone);
-		super.setBasicSalary(salary);
+		setBasicSalary(salary);
 
 	}
 
 	@Override
 	public double calculateTransportAllowance() {
 		double transportAllowance = 15 * getBasicSalary() / 100;
-		//System.out.println(transportAllowance);
+		// System.out.println(transportAllowance);
 		return transportAllowance;
 	}
 

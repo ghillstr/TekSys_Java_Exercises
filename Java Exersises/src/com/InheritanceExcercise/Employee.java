@@ -22,7 +22,7 @@ public class Employee {
 	}
 	
 	public double calculateSalary() {
-		double salary = getBasicSalary() + (getBasicSalary() * specialAllowance / 100) + (getBasicSalary() * hra / 100);
+		double salary = getBasicSalary() + (getBasicSalary() * (specialAllowance / 100)) + (getBasicSalary() * (hra / 100));
 		//System.out.println(salary);
 		return salary;
 	}
