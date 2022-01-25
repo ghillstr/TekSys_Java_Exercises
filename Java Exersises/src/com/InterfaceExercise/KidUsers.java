@@ -1,6 +1,6 @@
 package com.InterfaceExercise;
 
-public class KidUsers {
+public class KidUsers implements LibraryUser {
 	int age;
 	String bookType;
 
@@ -9,7 +9,7 @@ public class KidUsers {
 		this.bookType = bookType;
 		
 	}
-
+	@Override
 	public void registerAccount() {
 		if (age < 12) {
 			System.out.println("You have successfully registered under a Kids Account");
@@ -17,7 +17,7 @@ public class KidUsers {
 			System.out.println("Sorry, Age must be less than 12 to register as a kid.");
 		}
 	}
-
+	@Override
 	public void requestBook() {
 		if (bookType == "Kids") {
 			System.out.println("Book Issued successfully, please return the book within 10 days");

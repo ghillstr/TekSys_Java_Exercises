@@ -1,6 +1,6 @@
 package com.InterfaceExercise;
 
-public class AdultUsers {
+public class AdultUsers implements LibraryUser {
 	int age;
 	String bookType;
 	
@@ -9,7 +9,7 @@ public class AdultUsers {
 		this.bookType = bookType;
 		
 	}
-	
+	@Override
 	public void registerAccount() {
 		if (age > 12) {
 			System.out.println("You have successfully registered under an Adult Account");
@@ -17,6 +17,7 @@ public class AdultUsers {
 			System.out.println("Sorry, Age must be greater than 12 to register as a adult.");
 		}
 	}
+	@Override
 	public void requestBook() {
 		if (bookType == "Fiction") {
 			System.out.println("Book Issued successfully, please return the book within 7 days");

@@ -1,8 +1,8 @@
 package com.InterfaceExercise;
 
 interface LibraryUser {
-	public void registerAccount();
+	 void registerAccount();
 		
-	public void requestBook();
+	 void requestBook();
 
 }
