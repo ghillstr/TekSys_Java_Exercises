@@ -103,14 +103,15 @@ public class CollectionsSlide47 {
 
 	public static void main(String[] args) {
 
-		// HashMap<String, Integer> words = new HashMap<String, Integer>(); //declare maps
+		// HashMap<String, Integer> words = new HashMap<String, Integer>(); //declare
+		// maps
 		TreeMap<String, Integer> words = new TreeMap<String, Integer>();
 
 		for (String word : mobyDick.toLowerCase().split("\\P{Alpha}+")) { // to lower case & spit by alpha numerics
 			if (!words.containsKey(word)) {
-				words.put(word, 1);							//if there is one word
+				words.put(word, 1); // if there is one word
 			} else {
-				int count = words.get(word);				// count words
+				int count = words.get(word); // count words
 				count++;
 				words.put(word, count);
 			}
