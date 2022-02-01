@@ -11,10 +11,10 @@ public class FileReaderExercise {
 	public static void main(String[] args) throws Exception {
 
 		try {
-			File file = new File("src/2701-0.txt");
+			File file = new File("src/Planet-x.txt");
 			BufferedReader input = new BufferedReader(new FileReader(file));
 			@SuppressWarnings("resource")
-			FileWriter copy = new FileWriter("copy.txt");
+			FileWriter copy = new FileWriter("PlanetX.txt");
 
 			String line;
 			while ((line = input.readLine()) != null) {
